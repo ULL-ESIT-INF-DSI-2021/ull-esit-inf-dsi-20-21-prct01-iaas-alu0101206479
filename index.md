@@ -5,13 +5,14 @@
 
 #### Introducción
 
-Esto es un informe para poder llevar a cabo la *práctica 1 de Desarrollo de Sistemas Informáticos*, hemos aprendido a modificar los hosts de una maquina para así poder ejecutar `ssh` sin tener que introducir la contraseña e incluso sin tener que introducir el usuario. A parte hemos configurado git en la maquina virtual del IaaS para vincular el GitHub con la máquina y para así poder también configurar el prompt de la terminal para que aparezca la rama actual y también se han hecho más cosas que se pueden observar posteriormente.
+Esto es un informe para poder llevar a cabo la **práctica 1 de Desarrollo de Sistemas Informáticos**, hemos aprendido a modificar los **hosts** de una maquina para así poder ejecutar `ssh` sin tener que introducir la contraseña e incluso sin tener que introducir el usuario. A parte hemos configurado **git** en la maquina virtual del **IaaS** para vincular el **GitHub** con la máquina y para así poder también configurar el `prompt` de la terminal para que aparezca la rama actual y también se han hecho más cosas que se pueden observar posteriormente.
 
 #### Objetivos
 
 Los objetivos de esta práctica han sido configurar la maquina virtual en el IaaS, además de instalar y configurar todas las herramientas necesarias para comenzar a trabajar la asignatura (Node.js, por ejemplo).
 
-```markdown
+
+`` `bash
 Syntax highlighted code block
 
 # Ha
@@ -27,7 +28,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
+''
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
