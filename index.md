@@ -32,4 +32,6 @@ El nombre usuario es el mismo y en la IP pondremos la IP que hemos copiado, en m
   The authenticity of host '10.6.XXX.XXX (10.6.XXX.XXX)' can't be established.
   ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
   Are you sure you want to continue connecting (yes/no/[fingerprint])?
-``
+```
+
+A
