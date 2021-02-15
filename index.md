@@ -19,7 +19,7 @@ Para una persona poder conectarse al servicio IaaS desde fuera de la red univers
 Una vez conectada la VPN deberemos acceder al [Servicio IaaS de la ULL](https://iaas.ull.es/ovirt-engine/sso/login.html) e introducir nuestras credenciales. A continuación encontraremos todas las máqinas virtuales que tenemos, seleccionaremos la que se llama *DSI*, y pulsaremos **Ejecutar** para iniciar la máquina.
 Una vez iniciada la máquina virtual, en la parte derecha de la interfaz, donde se indica *Interfaces de red*, encontraremos la IP asignada a la interfaz de nuestra máquina.
 
-##### 3. Accedemos por ssh a la máquina
+##### 3. Acceder por ssh a la máquina y cambiar la contraseña
 Posteriormente, copiaremos la IP de la máquina virtual para conectarnos a ella por `SSH` a través de nuestra máquina local, por lo que ejecutaremos el comando:
 
 ```bash
@@ -33,3 +33,41 @@ El nombre usuario es el mismo y en la IP pondremos la IP que hemos copiado. Ya h
   ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
   Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
+
+Después, te pide que introduzcas la contraseña, la cual es `usuario` y una vez introducida el propio sistema te pedirá que cambies la contraseña. Para ello te hará introducir la contraseña actual (`usuario`) y posteriormente te hará introducir dos veces la nueva contraseña *(Es recomendable que la apuntes en algún lugar seguro para que no se te olvide)*.
+
+Posteriormente se nos habrá cerrado la sesión por lo que nos conectaremos de nuevo a través de `ssh` e introduciremos como contraseña la nueva.
+
+##### 4. Modificar el nombre del host de la máquina virtual
+Para hacer esto modificaremos el fichero `/etc/hostname`, el cual contiene el nombre del host de la máquina (el cual sera `ubuntu`) y lo cambiaremos por el nombre que queramos, en mi caso ha sido `iaas-dsi`. Para hacer esto ejecutaremos los siguientes comandos:
+
+```bash
+  # Mostramos el nombre de la máquina
+  usuario@ubuntu:~$ cat /etc/hostname
+  ubuntu
+  
+  # Lo cambiamos editando el fichero
+  usuario@ubuntu:~$ sudo vi /etc/hostname
+  
+  # Mostramos el nombre nuevamente para comprobar que se haya cambiado
+  usuario@ubuntu:~$ cat /etc/hostname
+  iaas-dsi
+```
+
+A parte de esto, tambien deberemos modificar ciertos parámetros en el fichero `/etc/hosts`:
+
+```bash
+  # Mostramos el contenido del fichero (las ip seguido de los nombres de los hosts)
+  usuario@ubuntu:~$ cat /etc/hosts
+  127.0.0.1	localhost
+  127.0.1.1	ubuntu
+  ...
+
+  # Editamos el fichero para cambiar el nombre del host local (ubuntu) por el que habíamos puesto
+  usuario@ubuntu:~$ sudo vi /etc/hosts
+
+  # Mostramos el contenido del fichero nuevamente para comprobar que se haya cambiado
+  usuario@ubuntu:~$ cat /etc/hosts
+  127.0.0.1	localhost
+  127.0.1.1	iaas-dsi
+  ...
