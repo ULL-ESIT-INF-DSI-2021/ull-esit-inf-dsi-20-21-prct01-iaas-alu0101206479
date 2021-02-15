@@ -12,7 +12,7 @@ Esto es un informe para poder llevar a cabo la **práctica 1 de Desarrollo de Si
 Los objetivos de esta práctica han sido configurar la maquina virtual en el IaaS, además de instalar y configurar todas las herramientas necesarias para comenzar a trabajar la asignatura (Node.js, por ejemplo).
 
 
-```markdown
+```bash
 Syntax highlighted code block
 
 # Ha
