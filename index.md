@@ -26,13 +26,10 @@ Posteriormente, copiaremos la IP de la máquina virtual para conectarnos a ella 
   ssh usuario@10.6.XXX.XXX
 ```
 
-El nombre usuario es el mismo y en la IP pondremos la IP que hemos copiado, en mi caso es la `10.6.130.183`. Ya hecho esto, introduciremos `yes` e intro ante la siguiente pregunta:
+El nombre usuario es el mismo y en la IP pondremos la IP que hemos copiado. Ya hecho esto, introduciremos `yes` e intro ante la siguiente pregunta:
 
 ```bash
   The authenticity of host '10.6.XXX.XXX (10.6.XXX.XXX)' can't be established.
   ECDSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
   Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
-
-
-AAA
