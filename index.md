@@ -110,8 +110,8 @@ Antes de volver a conectarnos a la máquina virtual, editaremos el fichero `/etc
   # Mostramos el contenido del fichero nuevamente para comprobar que se haya cambiado
   acoidan@ordenador:~$ cat /etc/hosts
   127.0.0.1	localhost
-  127.0.1.1	lluvia
-  10.6.XXX.XXX	iaas-dsi2
+  127.0.1.1	ordenador
+  10.6.XXX.XXX	iaas-dsi
   ...
 ```
 
@@ -139,7 +139,7 @@ Tomaremos los valores por defecto, para ello pulsaremos intro sin escribir absol
   Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
   /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
   /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-  usuario@iaas-dsi2's password: 
+  usuario@iaas-dsi's password: 
 
   Number of key(s) added: 1
 
@@ -178,8 +178,8 @@ Si a parte de no tener que usar la IP a la hora de iniciar sesión, tampoco se q
   
   # Mostramos el contenido del fichero nuevamente para comprobar que se haya cambiado
   acoidan@ordenador:~$ cat ~/.ssh/config 
-  Host iaas-dsi2
-    HostName iaas-dsi2
+  Host iaas-dsi
+    HostName iaas-dsi
     User usuario
 ```
 
