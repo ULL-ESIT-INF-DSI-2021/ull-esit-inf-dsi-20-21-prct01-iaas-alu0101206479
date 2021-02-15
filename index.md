@@ -12,7 +12,7 @@ Esto es un informe para poder llevar a cabo la **práctica 1 de Desarrollo de Si
 Los objetivos de esta práctica han sido configurar la maquina virtual en el IaaS, además de instalar y configurar todas las herramientas necesarias para comenzar a trabajar la asignatura (Node.js, por ejemplo).
 
 
-`` `bash
+```bash
 Syntax highlighted code block
 
 # Ha
@@ -28,7 +28,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-''
+``
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
