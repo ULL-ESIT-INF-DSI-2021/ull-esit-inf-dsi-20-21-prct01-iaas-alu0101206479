@@ -371,7 +371,7 @@ Y me alegra que existan este tipo de herramientas que hacen más fáciles la rea
 
 #### Bibliografía
 Nombre | Enlaces
--------|--------
+------------------------------------------------|--------------------------------------------------------
 Introducción a Markdown | https://guides.github.com/features/mastering-markdown/
 Información sobre GitHub Pages | https://docs.github.com/en/github/working-with-github-pages
 Sitio web de Jekyll | https://jekyllrb.com/
