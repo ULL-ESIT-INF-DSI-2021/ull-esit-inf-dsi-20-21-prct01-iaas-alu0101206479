@@ -370,6 +370,7 @@ Como conclusión a la práctica, considero que git es super importante en la vid
 Y me alegra que existan este tipo de herramientas que hacen más fáciles la realizaciones de los trabajos de una persona que se dedica a la informática.
 
 #### Bibliografía
+
 Nombre | Enlaces
 -------|--------
 Introducción a Markdown | https://guides.github.com/features/mastering-markdown/
