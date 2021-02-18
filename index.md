@@ -165,7 +165,7 @@ Una vez hecho esto, iniciaremos sesión en la máquina virtual por `SSH` nada ma
   usuario@iaas-dsi:~$
 ```
 
-##### 7. Modificar el fichero de configuración SSH de la máquina local para no tener que introducir el usuario para iniciar sesión en la máquina virtual
+##### 8. Modificar el fichero de configuración SSH de la máquina local para no tener que introducir el usuario para iniciar sesión en la máquina virtual
 
 Si a parte de no tener que usar la IP a la hora de iniciar sesión, tampoco se quisiera utilizar el nombre de usuario (`usuario`), podemos configurar el fichero `~/.ssh/config` en la máquina local ejecutando lo siguiente:
 
